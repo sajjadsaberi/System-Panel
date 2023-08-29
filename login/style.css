@@ -1,0 +1,132 @@
+:root {
+    --bgColor: #d3d3d3 ;
+    --bgLoginColor: #fff ;
+    --bgContainerColor : #333 ;
+    --bgInputColor: #f2f2f2 ;
+    --bgBottomColor: #324849 ;
+    --bgIconColor: #bdbdbd ;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: IranYekanX;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#container {
+    background-color: var(--bgContainerColor);
+    width: 800px;
+    height: 350px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex; 
+  }
+
+.login {
+    background-color: var(--bgLoginColor);
+    border-radius: 20px;
+    height: 120%;
+    width: 40%;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    margin-right: 5%;
+    margin-left: 3%;
+    margin-top: -35px;
+}
+
+#logo {
+    position: absolute;
+    left: 120px;
+    top: 5px;
+}
+
+.login p {
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    margin-top: 80px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.input-box {
+    width: 100%;
+    height: 115vh;
+    margin-top: -120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    direction: rtl;
+    border: none;
+    outline: none;
+}
+
+#username,
+#password {
+    display: block;
+    width: 80%;
+    height: 45px;
+    background-color: var(--bgInputColor);
+    border: none;
+    margin-bottom:20px;
+    font-size: 12px;
+    font-size: 12px;
+    font-family: IranYekanX;
+    padding-right: 55px;
+    padding-bottom: 2px;
+    border: 1px solid var(--bgIconColor);
+}
+
+#submit {
+    width: 80%;
+    height: 45px;
+    background-color: var(--bgBottomColor);
+    border: none;
+    margin-top: 50px;
+    font-size: 12px;
+    font-family: IranYekanX;
+    padding-bottom: 2px;
+    cursor: pointer;
+    color: var(--bgLoginColor)
+}
+
+#icon-aws {
+    width: 44px;
+    height: 43px;
+    background-color: var(--bgIconColor);
+    margin-top: -68px;
+    position: absolute;
+    margin-right: -210px;
+    font-size: 25px;
+    padding: 9px 0px 5px 14px;
+    color: var(--bgLoginColor)
+}
+
+#icon-aws2 {
+    width: 44px;
+    height: 43px;
+    background-color: var(--bgIconColor);
+    margin-top: 62px;
+    position: absolute;
+    margin-right: -210px;
+    font-size: 25px;
+    padding: 9px 0px 5px 14px;
+    color: var(--bgLoginColor)
+}
